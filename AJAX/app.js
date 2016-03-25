@@ -6,7 +6,8 @@ $(document).ready(function(){
 		$('tbody>tr').remove();
 		var cityName=$('#input1').val();
 		// console.log(cityName);
-		var urlStr='http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid=44db6a862fba0b067b1930da0d769e98';
+		//var urlStr='http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid=522321c42e132ebaf8e6d0b76d3b34e5';
+		var urlStr='http://api.openweathermap.org/data/2.5/forecast?q='+cityName+'&appid=522321c42e132ebaf8e6d0b76d3b34e5';
 		console.log('Before calling Ajax');
 		$.ajax({
 		   url: urlStr,
